@@ -1,0 +1,19 @@
+Syntax (blueprint / recipe)
+
+body {
+	background-color: #f67280;
+}
+
+selector {
+	property: value;
+}
+
+3 Selector Types:
+Tag
+
+#ID   /* start with hashtag */
+.Class   /* start with period */
+
+<h1 class="">
+<h1 id="">   /* can only be used ONCE per page */
+			/* purpose: you want something to be unique, either for presentation or clarifying */

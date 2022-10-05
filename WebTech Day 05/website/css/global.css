@@ -1,0 +1,77 @@
+	/* Base styles */
+	/*	
+		selector {
+		property: value;
+		}
+	*/
+
+
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+		body {
+			background: #70D48E url("bg.png");
+			font-family: 'Josefin Sans', sans-serif;
+			margin: 0;
+		
+		}
+
+
+		/* https://color.adobe.com/create/color-wheel */
+		header {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+
+			align-items: center;
+			background-color: #EBE988;
+			padding: 0px 10%;
+			border-bottom: dashed 5px #3D4FD4;
+
+		}
+
+		nav ul {
+			display: flex;
+			flex-direction: row;
+		}
+
+		nav ul li {
+			list-style-type: none;
+			float: left;   /* it is 'floating' so it is no longer in the div container */
+			margin-right: 30px;
+
+		}
+
+		/* a tag default is blue in color, and underline in default */
+		a {
+			display: block;
+			padding: 10px 20px;
+			text-decoration: none;
+			color: yellow;
+		}
+
+		nav ul li a:hover {
+			color: #F5374A;
+			font-weight: 800;
+			font-size: 1.2em;
+		}
+
+		/* class starts with period */
+		.no_space_class_name {
+			font-weight: 900;
+			/* default-weight = 400 (e.g. google font all 400 as regular, it is default weight */
+			/* use font-weight to bold, font-size is irrelevvant */
+			color: #83F7EF;
+		}
+
+		.selected {
+			background-color: #000000;
+			color: #fff;
+			border-radius: 3px;
+		}
+
+		.selected:hover {
+			background-color: #d7e0e8;
+			color: #7798b0;
+		}
