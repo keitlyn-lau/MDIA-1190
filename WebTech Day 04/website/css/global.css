@@ -1,0 +1,28 @@
+body {
+
+	/*background-image: url(images/bg.jpg);*/
+	background-image: url(../images/bg.jpg);
+	background-color: #393939;
+}
+
+#wrapper {
+	width: 780px;
+	background-color: #fff;
+	margin: 50px auto; /* top<->bottom, left<->right */
+	padding: 10px;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul li {
+	display: inline;
+	margin: 3px;
+	list-style-type: none; /* removes the bullets */
+}
+
+a {
+	text-decoration: none;
+}

@@ -1,0 +1,42 @@
+Understanding Lists
+
+Unordered List
+Web Design Consist of Several Documents
+HTML
+CSS
+Jpg / Gif
+
+
+
+Ordered List
+
+Top 5 Websites (Social Category)
+YouTube
+Facebook
+LinkedIn
+{you choose}
+
+
+
+Multiple Levels
+Photoshop
+File --> Open Image
+Image --> Image Size
+Check of Resample and Reduce to 72 dpi
+
+Illustrator
+File --> Save for Web
+Select Graphic Type
+
+
+Definition Lists
+A definition list starts with a dl tag (definition list).
+
+Each term starts with a dt tag (definition term).
+
+Each description starts with a dd tag (definition description).
+
+Coffee
+Black hot drink
+Milk
+White cold drink
