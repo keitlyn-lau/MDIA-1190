@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+html, body {
+	/* Note:   font:  font size/line heigh; */
+
+	/* Method 1: Only works if available on client's machine */
+	/*
+	font-family: Futura, Futura-Medium, "Futura Medium", "Century Gothic", CenturyGothic, sans-serif;
+	font:  16px/1.6 'Futura';
+	*/
+
+	/* Method 2:   A close replacement */;
+	font-family: 'Didact Gothic', sans-serif;
+	font: 16px/1.6 'Didact Gothic';
+	/*font-size: 62.5%;*/
+
+	padding: 6em;
+}
+
+.byline {
+	display: block;
+	font-size: 14px;
+}
+
+#wrapper {
+	width: 45%;
+	float: right;
+}
+
+h1 {
+	font-size: 6.90em;
+	line-height: 1.09em;
+	padding-top: 0.203em;
+	margin-bottom: 0.0145em;
+}
+
+h2 {
+	font-size: 4.20em;
+	line-height: 1.07em;
+	padding-top: 0.190em;
+	margin-bottom: 0.167em;
+}
+
+h3 {
+	font-size: 2.60em;
+	line-height: 1.15em;
+	padding-top: 0.231em;
+	margin-bottom: 0.346em;
+}
+
+h4 {
+	font-size: 1.60em;
+	line-height: 1.88em;
+	padding-top: 0.625em;
+	margin-bottom: 0.313em;
+}
+
+p {
+	font-size: 1.40em;
+	line-height: 1.50em;
+	padding-top: 0.400em;
+	margin-bottom: 1.10em;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+	color: red;
+}
+
+/* visited link */
+a:visited {
+	color: green;
+}
+
+/* mouse over link */
+a:hover {
+	color: blue;
+}
+
+/* selected link */
+a:active {
+	color: yellow;
+}
