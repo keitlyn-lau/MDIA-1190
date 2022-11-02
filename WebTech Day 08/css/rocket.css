@@ -1,0 +1,38 @@
+body {
+	animation: galaxy 10s infinite;
+}
+/* lightblue to black */
+
+@keyframes galaxy {
+	0% {background-color: #4a90b9;}
+	35% {background-color: #0f304a;}
+	85% {background-color: black;}
+	100% {background-color: black;}
+}
+
+#rocket {
+	position: absolute;
+	top: 60%;
+	left: 0%;
+	animation: flying 10s infinite;
+}
+
+@keyframes flying {
+	0% {top: 60%; left: 0%;}
+	50% {top: 40%; left: 40%; transform: rotate(270deg);}
+	100% {top: 0%; left: 20%; transform: rotate(270deg);}
+}
+
+#astro {
+	position: absolute;
+	top: -50%;
+	left: 90%;
+	animation: falling 10s infinite linear;
+}
+
+@keyframes falling {
+	0% {top: -50%; left: 90%;}
+	40% {top: 10%; left: 60%;}
+	80% {top: 90%; left: 25%;}
+	100% {top: 100%; left: 10%;}
+}

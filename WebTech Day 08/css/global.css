@@ -1,0 +1,31 @@
+body {
+/*	background-color: lightblue;*/ /* no need this */
+	animation: colorChange 15s infinite;
+}
+
+@keyframes colorChange {
+	0% {background-color: lightblue;}
+	25% {background-color: lightcoral;}
+	50% {background-color: lightgoldenrodyellow;}
+	75% {background-color: lightpink;}
+	100% {background-color: lightblue;}
+}
+
+#cloud {
+	width: 200px;
+	height: 200px;
+
+	position: absolute;
+	top: 150px; /* if here is px, keyframes px as well */
+	left: 70%;
+	animation: customName 5s infinite;
+	mix-blend-mode: multiply;
+}
+
+@-webkit-keyframes customName {
+	0%	{left: 70%;}
+	25% {top: 10px;}
+	50%	{left: 30%;}
+	75% {top: 300px;}
+	100% {left: 70%;}
+}

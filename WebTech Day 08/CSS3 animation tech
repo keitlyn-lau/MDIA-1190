@@ -1,0 +1,20 @@
+CSS3 animation tech
+
+Transition
+
+transition: who howlong howfasat
+
+selector {
+transition [property] [duration] [acceleration/deceleration]
+}
+
+
+ .object {
+ transition: [property] 3s ease-in;
+ opacity: 0.2;
+ }
+
+ event -> always 2 points
+ .object:hover {
+ 	opacity:1;
+ }
