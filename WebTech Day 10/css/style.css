@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+body {
+  font-family: 'Didact Gothic', sans-serif;
+  font: 10px/1.6 'Didact Gothic';   /* 1.6=leading, default is 1.2(120%) */
+
+  background: #35dc9b;
+  background: linear-gradient(to bottom, #add8e6, #ffffe0);
+
+/*   Flex would be nice if you want everything left to right, or top to bottom   */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;   /* px, vh, vw */
+}
+
+h1 {
+  margin: 0 20px 40px; /* top-bottom, left-right, space in bottom */
+  color: #fff;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Managing image scaling temp */ /* in real world, resize the photo in PS, because everything cost money */
+/* you can use this css resize to demonstrate to your clients */
+.avatar {
+  height: 300px;
+  width: auto;
+}
+
+/* ul li a {  } */
+/* form, label - if you put a comma between them, css applies to both */
+form label {
+  position: relative;
+  display: block;
+}
+
+form label input {
+  font-size: 1.8em;
+  box-sizing: border-box;
+  display: block;
+  border: none;
+  border-radius: 39px;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+form label input::placeholder {
+  color: #999;
+  font-size: 1.3em;
+}
+
+/* Event "focus" applies populated animation */
+form label input:focus, form label input.populated {
+  padding-top: 28px;
+  padding-bottom: 12px;
+}
+form label input:focus::placeholder,, form label input.populated::placeholder {
+  color: transparent;
+}
+form label input:focus + span, form label input.populated + span {
+  opacity: 1;
+  top: 10px;
+}
+
+/* Placeholder small */
+form label span {
+  color: #ea72c5;
+  font-size: 1.3em;
+  position: absolute;
+  top: 0px;
+  left: 20px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Send Button CSS */
+form input[type=submit] {
+  transition: all 0.2s ease-in-out;
+  font-size: 1.8em;
+  border: none;
+  border-radius: 20px;
+  background: #5bc9f5;
+  color: #fff;
+  padding: 16px 40px;
+}
+
+/* color is not the point, it is about the feedback when users click the button */
+form input[type=submit]:hover {
+  background: #a89fdd;
+}
