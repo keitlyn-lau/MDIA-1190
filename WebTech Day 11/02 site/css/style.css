@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+body {
+	/* css shorthand for font-size / line-height */
+	font: 0.8em/1.5 'PT Sans', sans-serif;
+	font-family: 'PT Sans', sans-serif;
+	margin: 0;
+}
+
+#bar {
+	/* == */
+	/* Common gradient shading effect with flexibility */
+	/* If box-shadow doesn't work, add this => background: green -webkit-linear-gradient(top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0)); */
+	background: green;
+	border-radius: 5px;
+	/* box-shadow: x-offset y-offset blur color */
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 1px rgba(0, 0, 0, 0.25);
+	height: 50px;
+	list-style: none;
+	margin: 20px auto;
+	padding: 0 20px;
+
+	/* Flexbox */
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+		/* short-form => flex-flow: row nowrap; */
+
+	/* equal distribution */
+	justify-content: flex-end;
+}
+
+/* Use > because purpose: only the first child/level will be affected */
+#bar > li > a {
+	color: #fff;
+	display: block;
+	font-weight: 0;
+	margin-right: 0;
+	padding: 15px 15px;
+	text-decoration: none;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+	white-space: nowrap;
+}
+
+/* == */
+
+/* Medium screens */
+@media all and (max-width: 1280px) {
+	#bar {
+		/* mobile = center it by evenly distributing empty space around items */
+		justify-content: space-around;
+	}
+
+	#bar > li > a {
+		font: 1.5em/1.5 'PT Sans', sans-serif;
+		white-space: nowrap; /* required for tight spaces */
+		-webkit-transition: all 0.25s;
+		transition: all 0.25s;
+	}
+}
+
+/* Small screens */
+@media all and (max-width: 760px) {
+	#bar {
+		/* fixed forced width */
+		width: 500px; /* too large */
+		/* width: 450px */
+	}
+	#bar > li > a {
+		font: 1em/1.5 'PT Sans', sans-serif;
+		padding: 15px 0px;
+
+		-webkit-transition: all 0.25s;
+		transition: all 0.25s;
+	}
+}
+
+/* -=[ DROP DOWNS ] */
+/* Submenu with Triangle Drops */
+.menu .submenu {
+	float: left; /* required to float submenu with menu item */
+	background: #fff;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+	list-style: none;
+	margin: 0;
+	opacity: 0; /* change to 0 once complete */
+	padding: 12px;
+
+	position: absolute; /* relative vs absolute = independently appear or not */
+	top: 80px; /* animated drop down: start position */
+
+	-webkit-transition: all 0.25s;
+	transition: all 0.25s;
+	visibility: hidden; /* change to hidden when completed */
+	width: 150px;
+}
+
+.menu:hover .submenu,
+.menu-hover:hover .submenu,
+.menu-click.menu-active .submenu {
+	/* click = js extension */
+	opacity: 1;
+	top: 65px; /* animation end position */
+	visibility: visible;
+}
+
+/* Drop Triangle ::before = Insert some text before the content of each (single: css2 :: css3) */
+.menu .submenu:before, /* for each before the submenu = what : means) */
+.menu .submenu::before {
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-bottom: 6px solid white;
+	content: "";
+	height: 0;
+	left: 24px;
+	position: absolute;
+	top: -6px;
+	width: 0;
+}
+
+.menu .submenu a {
+	color: #777;
+	display: inline-block;
+	line-height: 1.2em;
+	padding: 5px 0;
+	text-decoration: none;
+}
+
+.menu .submenu a:hover {
+	color: orangered;
+}
